@@ -6,12 +6,26 @@ img {
   width: 100px;
   height: 100px;
 }
-
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 32px;
+}
 .title {
   font-size: 36px;
   font-weight: 900;
 }
+.card-container{
+  display: flex;
 
+  gap: 52px;
+}
+.card{
+  border: 5px solid red;
+  width: 200px;
+  text-align: center;
+}
 /* do not edit this footer */
 .footer {
   position: fixed;
