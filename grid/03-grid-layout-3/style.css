@@ -5,6 +5,10 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-column: 1fr 4fr;
+
+  gap: 4px;
 }
 
 .container div {
@@ -17,20 +21,42 @@
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "logoarea menuarea";
+
 }
 
 .logo {
+  grid-area: logoarea;
+  justify-self: start;
+ 
+
+
 }
 
 .menu {
+  grid-area: menuarea;
+  align-self: center;
+
 }
 
 .menu ul {
+  list-style-type: none;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+
+
+
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  grid-area: 1;
+
 }
 
 .sidebar {
